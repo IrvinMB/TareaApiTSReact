@@ -68,6 +68,7 @@ const styles = StyleSheet.create({
     position: 'absolute', right: 8, top:10
   },
   cuadro: {
+    display: 'flex',
     flexDirection: "row",
     backgroundColor: 'grey',
     height: 100,
