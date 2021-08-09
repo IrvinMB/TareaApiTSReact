@@ -3,6 +3,7 @@ import { Text, View } from 'react-native'
 import IAlbum from '../../../models/IAlbum'
 import IFoto from '../../../models/IFoto'
 import AlbumDetail from '../../molecules/AlbumDetails/index'
+import FotosDetails from '../../molecules/AlbumDetails/indexClass'
 import Albumes from '../../organisms/AlbumList'
 
 const Home: React.FC = () => {
@@ -13,10 +14,14 @@ const Home: React.FC = () => {
         <View>
              {currentAlbum ? (
  
-                <AlbumDetail 
+                <FotosDetails 
                 setCurrentAlbum={setCurrentAlbum}
                 setCurrentAlbumDetail={setCurrentAlbumDetail}  
                 />
+                // <AlbumDetail 
+                // setCurrentAlbum={setCurrentAlbum}
+                // setCurrentAlbumDetail={setCurrentAlbumDetail}  
+                // />
      
         ) : (
             <Albumes 
